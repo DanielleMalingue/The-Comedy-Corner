@@ -1,0 +1,114 @@
+@import url(https://fonts.google.com/specimen/Fredoka+One?query=fredok);
+
+
+
+                                                                                                  /* Landing Page */
+.Header {
+    font-family: 'Slackey';
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center;
+    width: max-content;
+    background: linear-gradient(15deg,#fbff00, #4ebeff, #fbff2d);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    text-shadow: 0 3px #000000;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+
+.Header1 {
+  font-family: 'Slackey';
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  width: max-content;
+  background: linear-gradient(15deg,#fbff00, #4ebeff, #fbff2d);
+  border: 1px solid #000000;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0 3px #000000;
+  box-shadow: 9px 6px 9px 6px #000000;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center; /* center the child element horizontally */
+    margin-bottom: 20px;
+  }
+
+  .Header2 {
+    font-family: 'Slackey';
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    width: max-content;
+    background: linear-gradient(15deg,#ffffff, #4ebeff, #fbff2d);
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 0 3px #000000;
+    box-shadow: 9px 6px 9px 6px #000000;
+    }
+
+
+
+
+                                                                                                         /*Theme/Logo/Header*/
+.logo {
+    text-align: center;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 65pt;
+    font-family: 'Slackey';
+    text-shadow: -3px 0 #fbff00, 0 5px #000000, 5px 0 #000000, 0 -3px #00d5ff;
+
+}
+.logo1 {
+  text-align: center;
+  color: #ffffff;
+  border-radius: 10px;
+  font-size: 50pt;
+  font-family: 'Slackey';
+  text-shadow: -3px 0 #fbff00, 0 5px #000000, 5px 0 #000000, 0 -3px #00d5ff;
+}
+
+a { text-decoration: inherit; color:rgb(251, 251, 251) } /* Globally */
+
+/* Each state */
+a:visited { text-decoration: none; color:rgb(255, 255, 255); }
+a:hover { text-decoration: none; color:blue; }
+a:focus { text-decoration: none; color:rgb(27, 27, 21); }
+a:hover, a:active { text-decoration: none; color:rgb(234, 255, 0) }
+
+.header1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .header1 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header2 {
+    flex-direction: column;
+    align-items: center;
+  }
+}

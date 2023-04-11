@@ -1,0 +1,138 @@
+  	
+<html>
+    <head>
+    <title>Laugh and Eat</title>
+    <link href="laughandeat.css" type="text/css" rel="stylesheet">
+    <link href="thecomedycorner.js" type="text/javascript" rel="javascript">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Slackey">
+    <style>
+  body { background: linear-gradient(25deg,#ffffff, #4ebeff, #f8ff92, #ffffff, #4ebeff, #ffff00);
+      }
+      .happyboy {
+        margin-top: 20px;
+        position: absolute;
+        border-radius: 20px;
+        width: fit-content;
+        height: 400px;
+        z-index: -1;
+        right: 100px;
+      }
+      .hidden1 {
+        display: none;
+        position: absolute;
+        width: fit-content;
+        height: 400px;
+        z-index: -1;
+        right: 100px;
+      }
+
+      .title1 {
+        margin-top: 20px;
+        position: absolute;
+        border-radius: 20px;
+        width: fit-content;
+        height: 400px;
+        z-index: -1;
+        left: 600px;
+    }
+
+      .hidden2 {
+        display: none;
+        position: absolute;
+        width: fit-content;
+        height: 400px;
+        z-index: -1;
+        left: 600px;
+      }
+
+      .title2 {
+        margin-top: 20px;
+        position: absolute;
+        border-radius: 20px;
+        width: fit-content;
+        height: 400px;
+        z-index: -1;
+        left: 100px;
+      }
+
+      .hidden3 {
+        display: none;
+        position: absolute;
+        width: fit-content;
+        height: 400px;
+        z-index: -1;
+        left: 100px;
+      }
+      
+  h1 {
+    font-size: 36px;
+    font-family: 'Slackey';
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: -3px 0 #4ebeff, 0 5px #000000, 5px 0 #000000, 0 -3px #4ebeff;
+    text-align: center;
+  }
+
+  .flex-container {
+    display: flex;
+    bottom: 900px;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  @media screen and (max-width: 600px) {
+     .flex-container {
+       flex-direction: column;
+       justify-content: center;
+     }
+  }
+
+    </style>
+    </head>
+    <body>
+     <div class="logo"><a href="laughandeat.html">The Comedy Corner</a> </div>   
+   
+       
+    </div>
+ <div class="header"> 
+    <a href="Jokes.html">Jokes</a> &nbsp; &nbsp;
+         <a href="Memes.html">Memes</a> &nbsp; &nbsp; 
+         <a href="About.html">About</a>&nbsp; &nbsp;
+          <a href="Submissions.html">Contact Us</a> &nbsp;  
+                </div>
+
+<h1>Flip a Card to Get a Welcome Surprise</h1>
+<div class="flex-container">
+<img src="happyboy.jpg" alt="happyboy" class="happyboy">
+<img src="Untitled design (2).jpg" alt="happyboy" class="title1">
+<img src="Untitled design (3).jpg" alt="happyboy" class="title2">
+</div>
+<div class="hidden1">Joker.lmao</div>
+<div class="hidden2">Joker.lmao</div>
+<div class="hidden3">Joker.lmao</div>
+
+    </body>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        // Set up a hover event for each element
+        $('.happyboy, .title1, .title2').hover(function() {
+          // When the mouse enters the element, fade out the image and fade in the hidden content
+          $(this).find('img').fadeOut(400, function() {
+            $(this).siblings('.hidden').fadeIn(400);
+          });
+        }, function() {
+          // When the mouse leaves the element, fade out the hidden content and fade in the image
+          $(this).find('.hidden').fadeOut(400, function() {
+            $(this).siblings('img').fadeIn(400);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
+   
+</html>
+  

@@ -1,0 +1,140 @@
+
+<html>
+  <link href="laughandeat.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Slackey">
+<head>
+	<title>Jokes Page</title>
+	<meta charset="utf-8">
+
+</head>
+<style>
+	body {
+	background: #000000;
+	background: linear-gradient(15deg,#fbff00, #4ebeff, #ffffff);
+	font-family: 'Slackey';
+  }
+  h1 {
+    font-size: 50px;
+    margin-top: 100px;
+    font-family: 'Slackey';
+    text-transform: uppercase;
+	text-align: center;
+    color: #ffffff;
+    text-shadow: -3px 0 #4ebeff, 0 5px #000000, 5px 0 #000000, 0 -3px #4ebeff;
+  }
+  #setup {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #000000;
+  font-family: 'Slackey';
+  width: fit-content;
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#punchline {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 16px;
+  color: #fff;
+  font-family: 'Slackey';
+  background: #4ebeff;
+  padding: 16px;
+  max-width: fit-content;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: center;
+  margin: auto;
+}
+
+#show-punchline {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(to right, rgb(0, 29, 251), #4ebeff);
+  margin-left: 40%;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-family: 'Slackey';
+  border: none;
+  margin-top: 30px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+
+}
+
+#show-punchline:hover {
+  transform: scale(1.1);
+  background: linear-gradient(to right, #fbff00, #e67e22);
+}
+
+#refresh {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(to right, #fbff00, #e67e22);
+  margin-left: 25%;
+  margin-top: 30px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-family: 'Slackey';
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+
+}
+
+#refresh:hover {
+  transform: scale(1.1);
+  background: #4ebeff;
+}
+
+
+</style>
+<body>
+	<div class="logo1"><a href="laughandeat.html">The Comedy Corner</a> </div>   
+	<div class="header1">  
+        <a href="Jokes.html">Jokes</a> &nbsp; &nbsp;
+         <a href="Memes.html">Memes</a> &nbsp; &nbsp; 
+         <a href="About.html">About</a>&nbsp; &nbsp;
+          <a href="Submissions.html">Contact Us</a> &nbsp;   </div>
+	<h1>Here are some random jokes to make you laugh!</h1>
+		<div>
+			<p id="setup"></p>
+			<p id="punchline" style="display:none;"></p>
+			<button id="show-punchline">Show Punchline</button>
+			<button id="refresh">New Joke</button>
+		</div>
+	
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			// Fetch a random joke from the API
+			$.getJSON("https://official-joke-api.appspot.com/random_joke", function(data) {
+				$("#setup").text(data.setup); // Display the setup
+				$("#punchline").text(data.punchline); // Display the punchline (hidden initially)
+			});
+
+			// Show the punchline when the user clicks on the button
+			$("#show-punchline").click(function() {
+				$("#punchline").show();
+			});
+			$("#refresh").click(function() {
+				location.reload();
+			});
+		});
+	</script>
+</head>
+</html>
+

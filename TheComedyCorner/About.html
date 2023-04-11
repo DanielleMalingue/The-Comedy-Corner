@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About</title>
+  <link href="laughandeat.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=Slackey">
+</head>
+<style>
+
+body {
+  background: #000000;
+  background: linear-gradient(15deg,#fbff00, #4ebeff, #ffffff);
+  font-family: 'Slackey';
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-family: 'Slackey';
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: -3px 0 #4ebeff, 0 5px #000000, 5px 0 #000000, 0 -3px #4ebeff;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 30px;
+    font-family: 'Slackey';
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+  }
+
+  h3 {
+    margin-bottom: 30px;
+    font-family: 'Slackey';
+    text-transform: uppercase;
+    color: #000000;
+    text-align: center;
+  }
+
+  h4 {
+    margin-bottom: 30px;
+    font-family: 'Slackey';
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: -3px 0 #4ebeff, 0 5px #000000, 5px 0 #000000, 0 -3px #4ebeff;
+    text-align: center;
+  }
+
+</style>
+<body>
+  <div class="logo1"><a href="laughandeat.html">The Comedy Corner</a> </div>   
+  
+  <div class="header1">   
+    <a href="Jokes.html">Jokes</a> &nbsp; &nbsp;
+     <a href="Memes.html">Memes</a> &nbsp; &nbsp; 
+     <a href="About.html">About</a>&nbsp; &nbsp;
+      <a href="Submissions.html">Contact Us</a> &nbsp;  
+     </div>
+     <h1>Welcome to the Comedy Corner!</h1>
+<hr>
+     <h2>Our mission is simple: to make you laugh. We believe that laughter is the best medicine, and we're dedicated to providing you with the best comedy content possible.</h2>
+<hr>     
+     <h3>At the Comedy Corner, we're all about having fun. We love to poke fun at life's little quirks and share our unique perspectives on the world around us. Whether it's through our hilarious skits, stand-up routines, or funny memes, we're committed to bringing a smile to your face.
+     
+     Our team of talented writers, comedians, and performers is passionate about what they do. They work tirelessly to come up with new and exciting content that will keep you entertained and engaged. We're always looking for new ways to push the boundaries of comedy and bring you something fresh and exciting.
+     
+     We believe that comedy should be inclusive and accessible to everyone. That's why we strive to create content that's suitable for all ages and backgrounds. Whether you're a die-hard comedy fan or just looking for a good laugh, you're sure to find something you love here at the Comedy Corner.</h3>
+<hr>     
+     <h4>So, sit back, relax, and get ready to laugh your socks off. We're thrilled to have you join us on this hilarious journey, and we can't wait to share our comedic adventures with you. Thanks for stopping by!</h4>
+  
+</body>
+<script src="http://code.jquery.com/jquery.js"></script> 
+<script>
+$(document).ready(function() {
+  $('h1, h3', 'h2', 'h4').mouseover(function() {
+    $('body').toggleClass('dark-mode');
+    $('h1, h4').toggleClass('light-text dark-text');
+    $('h2, h3').toggleClass('dark-text light-text');
+  });
+});
+</script>
+</html>
